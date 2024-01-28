@@ -1,0 +1,86 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  /* background: linear-gradient(to right, #85d36d, #91e578); */
+  background-color: #e1ef68;
+
+
+}
+.container {
+  position: absolute;
+  width: 82%;
+  max-width: 580px;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  background: #fff;
+  padding: 50px 10px;
+  border-radius: 5px;
+  display: grid;
+  justify-items: center;
+  font-family: "poppins", sans-serif;
+}
+
+h3 {
+  font-size: 28px;
+  font-weight: 600;
+}
+input[type="text"] {
+  height: 60px;
+  width: 80%;
+  max-width: 120px;
+  font-weight: 600;
+  padding: 20px 0;
+  font-size: 28px;
+  text-align: center;
+  margin-top: 30px;
+  border-radius: 5px;
+  border: 2px solid #202020;
+  color: #663399;
+}
+button {
+  width: 80%;
+  max-width: 160px;
+  padding: 15px 0;
+  border-radius: 5px;
+  background-color: #663399;
+  color: #fff;
+  border: none;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+button:hover {
+  background-color: #511191;
+  color: #fff;
+}
+
+button {
+  transition: transform 0.1s ease;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+p {
+  font-weight: 400;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+  .container {
+    width: 90%;
+  }
+  input[type="text"], button {
+    width: 100%;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+  }
+}
